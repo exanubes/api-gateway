@@ -6,8 +6,8 @@
   "scripts": {
     "start": "tsc -w",
     "build": "tsc && sam-beta-cdk build",
-    "cdk:deploy": "npx cdk destroy --app .aws-sam/build --all --role-arn=arn:aws:iam::$(aws sts get-caller-identity --query 'Account' --output text):role/exanubes-cloudformation-access",
-    "cdk:destroy": "npx cdk deploy --app .aws-sam/build --all --role-arn=arn:aws:iam::$(aws sts get-caller-identity --query 'Account' --output text):role/exanubes-cloudformation-access"
+    "cdk:destroy": "npx cdk destroy --app .aws-sam/build --all --role-arn=arn:aws:iam::$(aws sts get-caller-identity --query 'Account' --output text):role/exanubes-cloudformation-access",
+    "cdk:deploy": "npx cdk deploy --app .aws-sam/build --all --role-arn=arn:aws:iam::$(aws sts get-caller-identity --query 'Account' --output text):role/exanubes-cloudformation-access"
   },
   "keywords": [
     "aws",
